@@ -96,6 +96,9 @@ function getMovie() {
     if (!movie) {
         movie = "Mr Nobody";
         console.log("If you haven't watched 'Mr Nobody' then you should. It's on Netflix");
+    }
+
+    else {
 
         var request = require('request');
         request("https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy", function (error, response, body) {
